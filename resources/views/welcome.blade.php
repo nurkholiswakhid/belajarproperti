@@ -9,14 +9,14 @@
 <body class="font-sans text-gray-800">
 
     <!-- Header -->
-    <header class="relative bg-cover bg-center h-screen" style="background-image: url('your-background-image.jpg');">
-        <div class="absolute inset-0 bg-black opacity-50"></div>
+<header class="relative bg-cover bg-center h-screen" style="background-image: url('{{ asset('images/komplek-perumahan.jpg') }}');">
+        <div class="absolute inset-0 opacity-30" style="background-color: #FA760A;"></div>
         <div class="relative z-10 p-6 flex flex-col justify-between h-full">
             <!-- Navbar -->
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-2">
-                    <img src="logo.png" alt="Logo" class="h-10">
-                    <span class="text-white font-bold text-lg">belajarProperti<span class="text-orange-400">.com</span></span>
+                    <img src="{{ asset('images/logo.png') }}" alt="Logo" class="h-28 w-auto md:h-32 lg:h-36 xl:h-40">
+
                 </div>
                 <nav class="space-x-6 hidden md:flex text-white">
                     <a href="#about" class="hover:text-orange-400">About</a>
@@ -27,11 +27,16 @@
             </div>
 
             <!-- Hero Text -->
-            <div class="mt-auto text-white max-w-xl">
-                <h1 class="text-4xl font-bold">BelajarProperty.id</h1>
-                <p class="mt-4">"Di BelajarProperty.id, properti bukan lagi hal yang menakutkan untuk pemula!"</p>
-                <a href="#masuk" class="inline-block mt-6 bg-orange-500 text-white px-6 py-2 rounded">Masuk</a>
+         <div class="h-screen flex items-center">
+                <div class="text-white max-w-xl ml-8">
+                    <h1 class="text-5xl font-bold">BelajarProperty.id</h1>
+                    <p class="mt-4 text-lg">"Di BelajarProperty.id, properti bukan lagi hal yang menakutkan untuk pemula!"</p>
+                    <a href="#masuk" class="inline-block mt-6 bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-lg text-white text-lg font-semibold">
+                        Masuk
+                    </a>
+                </div>
             </div>
+
         </div>
     </header>
 
